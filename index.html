@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workshop: Professor Scott Moss</title>
+    <style>
+        /* Basic Reset and Variables */
+        :root {
+            --primary-color: #007bff; /* Blue */
+            --secondary-color: #28a745; /* Green */
+            --background-color: #f8f9fa; /* Light Gray */
+            --text-color: #343a40; /* Dark Gray */
+            --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header and Navigation */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #ffffff;
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #1e7e34;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .section:nth-child(even) {
+            background-color: #e9ecef;
+        }
+
+        .section h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .workshop-details {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .detail-card {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            min-width: 250px;
+            transition: transform 0.3s;
+        }
+
+        .detail-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+            .workshop-details {
+                flex-direction: column;
+                align-items: center;
+            }
+            .detail-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Professor Scott Moss' AI Workshop</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#details">Details</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Mastering the AI Frontier</h2>
+                <p>Join Professor Moss for an intensive, hands-on workshop on **Generative AI and Machine Learning Fundamentals**.</p>
+                <a href="#register" class="cta-button">Secure Your Spot Today!</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h3>About the Workshop</h3>
+                <p>Designed for developers and tech enthusiasts, this workshop cuts through the hype to deliver **practical, production-ready AI skills**. Learn to implement powerful models, understand core algorithms, and integrate AI into your applications with real-world projects.</p>
+                <p>Taught by **Professor Scott Moss**, a renowned expert in software architecture and modern development practices.</p>
+            </div>
+        </section>
+
+        <section id="topics" class="section">
+            <div class="container">
+                <h3>Key Topics Covered</h3>
+                <div class="workshop-details">
+                    <div class="detail-card">
+                        <h4>Deep Learning Basics</h4>
+                        <p>Neural Networks, backpropagation, and introductory TensorFlow/PyTorch.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Generative Models (LLMs)</h4>
+                        <p>Understanding large language models, prompt engineering, and the transformer architecture.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Practical Deployment</h4>
+                        <p>Deploying models to the cloud (AWS/Azure/GCP) and MLOps principles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="details" class="section">
+            <div class="container">
+                <h3>Workshop Details</h3>
+                <div class="workshop-details">
+                    <div class="detail-card">
+                        <h4>📅 Date</h4>
+                        <p>January 25 - 27, 2026</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>⏱ Time</h4>
+                        <p>9:00 AM - 5:00 PM (CST) Daily</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>📍 Location</h4>
+                        <p>Online via Zoom & Dedicated Platform</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="register" class="section">
+            <div class="container">
+                <h3>Ready to Level Up Your Skills?</h3>
+                <p>Registration is limited to ensure a high-quality, interactive experience.</p>
+                <a href="#" class="cta-button">Register Now ($499)</a>
+                <p style="margin-top: 20px;">*Early bird discount available until Dec 31st.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI Workshop by Professor Scott Moss. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
